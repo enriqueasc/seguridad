@@ -1,0 +1,36 @@
+Primero se crea el proyecto
+//crea el proyecto 
+npx create-next-app@12 next-auth0
+
+segundo debes entrar el proyecto e instalar esta libreria
+//instala el jdk de auth 0 para trabajar con la libreria
+npm install @auth0/nextjs-auth0
+
+
+
+//genera el secret 
+//openssl rand -hex 32  
+
+corremos el proyectos
+npm run dev
+
+Libreria para el manejo de rutas de manera autimatica nos da 4 rutas para el flujo e autentificacion
+login
+callback
+logout
+/me   aqui es a donde nos redirije una ves que ya esta logeado
+
+
+debemos crear una carpeta dentro de api
+ llamada auth
+
+crear archivo  [...auth0].js
+
+Este archivo se configura para generar las rutas dinamicas
+
+para hacer la rutas dinamicas hacemos un import de la libreria 
+
+import {hanleAuth} from '@auth0/nextjs-auth0';
+
+export default hanleAuth();
+
