@@ -1,0 +1,34 @@
+{
+  "name": "express-mongo",
+  "version": "1.0.0",
+  "description": "Api Rest con express y mongo",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "keywords": [
+    "Express",
+    "Mongo",
+    "server",
+    "mongoose"
+  ],
+  "author": " <Enrique.Ascencio@uteq.edu.mx>",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongodb": "^5.5.0",
+    "mongoose": "^7.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22",
+    "@babel/core": "^7.22.1",
+    "@babel/preset-env": "^7.22.4",
+    "@babel/register": "^7.21.0"
+  }
+
+
+
+
+}
